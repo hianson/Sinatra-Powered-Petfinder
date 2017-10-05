@@ -13,6 +13,9 @@ gem 'activerecord', '~>4.2.0'
 gem 'rake'
 
 gem 'shotgun', '~>0.9.1'
+gem 'httparty'
+gem 'pry-byebug'
+gem 'awesome_print'
 
 group :test do
   gem 'shoulda-matchers'

@@ -6,7 +6,6 @@
 class PetfinderAdapter
 
   include HTTParty
-
   base_uri 'api.petfinder.com'
   # For the Giphy Adapter class, make the endpoint
   # equal to whatever is called with
@@ -15,15 +14,24 @@ class PetfinderAdapter
     @api_key = ENV['PETFINDER_API_KEY']
   end
 
-  def search(search_string)
-    response = self.class.get("/v1/gifs/search",
-                   { query:
-                     {
-                       q: search_string,
-                       api_key: @api_key
-                     }
-                   })
+  # def search(search_string)
+  #   response = self.class.get("/v1/gifs/search",
+  #                  { query:
+  #                    {
+  #                      q: search_string,
+  #                      api_key: @api_key
+  #                    }
+  #                  })
+  #
+  #   response["data"].map { |result| result["images"]["fixed_height"]["url"] }
+  # end
 
-    response["data"].map { |result| result["images"]["fixed_height"]["url"] }
+  def search
+    response = self.class.get("/breed.list?key=#{@api_key}&animal=dog&format=json")
+    binding.pry
+    # p "*" * 100
+    # p "hello"
+    # p "*" * 100
   end
+
 end
