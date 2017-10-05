@@ -16,6 +16,7 @@ gem 'shotgun', '~>0.9.1'
 gem 'httparty'
 gem 'pry-byebug'
 gem 'awesome_print'
+gem 'dotenv'
 
 group :test do
   gem 'shoulda-matchers'

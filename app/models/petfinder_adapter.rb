@@ -1,6 +1,6 @@
 # response = HTTParty.get('http://api.stackexchange.com/2.2/questions?site=stackoverflow')
 
-# puts response.body, response.code, response.message, response.headers.inspect
+# puts response.body, response.code, response.message, response.header.inspect
 
 # Or wrap things up in your own class
 class PetfinderAdapter
@@ -27,11 +27,8 @@ class PetfinderAdapter
   # end
 
   def search
-    response = self.class.get("/breed.list?key=#{@api_key}&animal=dog&format=json")
-    binding.pry
-    # p "*" * 100
-    # p "hello"
-    # p "*" * 100
+    response = self.class.get("/pet.getRandom?key=#{@api_key}&animal=dog&format=json&output=full").response.read_body
+    JSON.parse(response)
   end
 
 end
