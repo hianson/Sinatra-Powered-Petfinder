@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+#main-header {
+  padding-top: 20px;
+}
+
 #nav-button {
   padding: 8px;
   top: 0;
@@ -20,21 +24,13 @@ body {
   font-size: 30px;
 }
 
-#main-img {
-  float: left;
-
-}
-
-#dog-info {
-  /*float: left;*/
-}
-
 div {
   border: 1px solid pink;
 }
 
 #info-table th {
   padding: 10px;
+  /*border: 1px solid purple;*/
   vertical-align: bottom;
 }
 
@@ -44,4 +40,5 @@ div {
 
 #info-table td {
   vertical-align: top;
+  /*border: 3px solid blue;*/
 }

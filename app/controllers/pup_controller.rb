@@ -6,7 +6,7 @@ post '/dog' do
     @sex = @results["sex"]["$t"] if @results["sex"]
     @age = @results["age"]["$t"] if @results["age"]
     @size = @results["size"]["$t"] if @results["size"]
-    # @breed = @results["breeds"]["breed"]["$t"] if @results["breeds"]["breed"]
+    @breed = @results["breeds"]["breed"]["$t"] if @results["breeds"]["breed"]
     @description = @results["description"]["$t"] if @results["description"]
     "*" * 50
     # @photos = @results["media"]["photos"]["photo"]
