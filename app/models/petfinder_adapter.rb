@@ -14,21 +14,10 @@ class PetfinderAdapter
     @api_key = ENV['PETFINDER_API_KEY']
   end
 
-  # def search(search_string)
-  #   response = self.class.get("/v1/gifs/search",
-  #                  { query:
-  #                    {
-  #                      q: search_string,
-  #                      api_key: @api_key
-  #                    }
-  #                  })
-  #
-  #   response["data"].map { |result| result["images"]["fixed_height"]["url"] }
-  # end
-
   def search
     response = self.class.get("/pet.getRandom?key=#{@api_key}&animal=dog&format=json&output=full").response.read_body
-    JSON.parse(response)
+    parsed_response = JSON.parse(response)
+    parsed_response["petfinder"]["pet"]
   end
 
 end

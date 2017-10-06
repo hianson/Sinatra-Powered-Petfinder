@@ -2,3 +2,46 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+#nav-button {
+  padding: 8px;
+  top: 0;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: white;
+}
+
+#dog {
+  background-color: white;
+  border: none;
+  font-size: 30px;
+}
+
+#main-img {
+  float: left;
+
+}
+
+#dog-info {
+  /*float: left;*/
+}
+
+div {
+  border: 1px solid pink;
+}
+
+#info-table th {
+  padding: 10px;
+  vertical-align: bottom;
+}
+
+#info-table {
+  width: 960px;
+}
+
+#info-table td {
+  vertical-align: top;
+}
