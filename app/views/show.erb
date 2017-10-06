@@ -1,22 +1,42 @@
 <h1><%= @name %></h1>
 
-<table id="info-table">
-  <tr>
-    <th rowspan="2"><img src=<%= @main_photo %>></th>
-    <th>sex</th>
-    <th>age</th>
-    <th>size</th>
-    <th>breed</th>
-  </tr>
-  <tr>
-    <td><%= @sex %></td>
-    <td><%= @age %></td>
-    <td><%= @size %></td>
-    <td><%= @breed %></td>
-  </tr>
-</table>
+
+<div id="container">
+  <table id="info-table">
+    <tr>
+      <th rowspan="6"><a target="_blank"  href="https://www.petfinder.com/petdetail/<%= @id %>"><img id="pup" src=<%= @main_photo %>></a></th>
+      <th style="height:10%">sex:</th>
+      <th style="height:10%">age:</th>
+      <th style="height:10%">size:</th>
+    </tr>
+    <tr>
+      <td style="height:10%"><%= @sex %></td>
+      <td style="height:10%"><%= @age %></td>
+      <td style="height:10%"><%= @size %></td>
+    </tr>
+    <tr>
+      <th colspan="3" style="height:10%">location: <%= @city %>, <%= @state %> <%= @zip %></th>
+    </tr>
 
 
-<div>
-  <p>description: <%= @description %></p>
+    <tr>
+      <th colspan="3" style="height:10%">breed(s):
+
+        <%= @breed %>
+
+      </th>
+    </tr>
+
+    <tr>
+      <th colspan="3" style="height:10%">contact: <%= @email %></th>
+    </tr>
+      <tr>
+        <td colspan="3" style="height:10%"> <%= @email %></td>
+      </tr>
+  </table>
+
+  <h3>description: </h3>
+  <div id="desc">
+    <p><%= @description %></p>
+  </div>
 </div>

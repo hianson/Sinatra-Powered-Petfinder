@@ -5,6 +5,8 @@ body {
 
 #main-header {
   padding-top: 20px;
+  font-family: "Comic Sans MS";
+  font-size: 40px;
 }
 
 #nav-button {
@@ -18,27 +20,31 @@ body {
   background-color: white;
 }
 
-#dog {
+#dog-button {
   background-color: white;
   border: none;
   font-size: 30px;
 }
 
-div {
-  border: 1px solid pink;
-}
-
-#info-table th {
-  padding: 10px;
-  /*border: 1px solid purple;*/
-  vertical-align: bottom;
-}
-
 #info-table {
+  vertical-align: middle;
   width: 960px;
 }
 
-#info-table td {
-  vertical-align: top;
-  /*border: 3px solid blue;*/
+* {
+  /*border: 1px solid black;*/
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+#desc {
+  line-height: 140%;
+}
+
+#pup {
+  width: 500px;
+  border-radius: 10px;
 }
