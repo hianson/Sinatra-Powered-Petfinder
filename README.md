@@ -5,7 +5,7 @@ This was my first lesson in using web APIs. This simple Sinatra web app uses HTT
 You'll need an API key from Petfinder, found here: https://www.petfinder.com/developers/api-docs
 
 1. Clone repo
-2. Create '.env' file
-3. Inside .env file: PETFINDER_API_KEY=key
+2. Create '.env' file inside Sinatra-Powered-Petfinder directory
+3. In .env file: PETFINDER_API_KEY=key
 4. Run Sinatra with "bundle exec shotgun" in CLI
 5. Reach app using localhost:9393 in browser!
