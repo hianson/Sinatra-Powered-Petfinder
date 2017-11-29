@@ -1,29 +1,43 @@
 body {
   padding: 20px;
   text-align: center;
+  font-family: "Comic Sans MS";
 }
 
 #main-header {
   padding-top: 20px;
-  font-family: "Comic Sans MS";
+  /*font-family: "Comic Sans MS";*/
   font-size: 40px;
 }
 
+#footer {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 25px;
+  background-color: #E7EDFC;
+  border-radius: 10px 10px 0px 0px;
+}
+
 #nav-button {
-  padding: 8px;
+  /*padding: 3px;*/
   top: 0;
   position: fixed;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  background-color: white;
+  width: 200px;
+  background-color: #E7EDFC;
+  border-radius: 0px 0px 10px 10px;
 }
 
 #dog-button {
-  background-color: white;
+  background-color: #E7EDFC;
   border: none;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #info-table {

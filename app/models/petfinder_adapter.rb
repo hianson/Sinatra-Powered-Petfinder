@@ -20,8 +20,4 @@ class PetfinderAdapter
     parsed_response["petfinder"]["pet"]
   end
 
-
-  # def parse_dog
-  #   search
-  # end
 end
