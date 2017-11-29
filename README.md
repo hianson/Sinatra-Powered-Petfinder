@@ -1,4 +1,11 @@
-### Purpose
-Search adoptables:
+### What this is:
+This was my first lesson in using web APIs. This simple Sinatra web app uses HTTParty to hit Petfinder's API to get and display information about a random pup which is up for adoption.
 
-1. Look up adoptable pets and stuff like that
+### Make it work:
+You'll need an API key from Petfinder, found here: https://www.petfinder.com/developers/api-docs
+
+1. Clone repo
+2. Create '.env' file
+3. Inside .env file: PETFINDER_API_KEY=key
+4. Run Sinatra with "bundle exec shotgun" in CLI
+5. Reach app using localhost:9393 in browser!
