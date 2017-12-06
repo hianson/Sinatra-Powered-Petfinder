@@ -9,3 +9,5 @@ You'll need an API key from Petfinder, found here: https://www.petfinder.com/dev
 3. In .env file: PETFINDER_API_KEY=key
 4. Run Sinatra with "bundle exec shotgun" in CLI
 5. Reach app using localhost:9393 in browser!
+
+![Image of Sinatra-Powered-Petfinder](https://i.imgur.com/10WXDPb.png)
